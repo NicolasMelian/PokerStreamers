@@ -19,7 +19,7 @@ html , body {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-    grid-auto-rows: 300px;
+    grid-auto-rows: auto;
     align-content: center;
     justify-content: space-around;
     align-items: center;
@@ -157,4 +157,21 @@ html , body {
 };
 
 
+}
+
+@media only screen and (min-width: 1600px){
+    #container {  
+        grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+        grid-auto-rows: auto;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .middle {
+        width: 350px;
+    }
+    .middle .card{
+        width: 334px;
+    }
+   
 }
